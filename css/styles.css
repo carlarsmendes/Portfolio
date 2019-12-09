@@ -187,6 +187,11 @@ section#contacts #email {
     padding: 31.5px 0;
 }
 
+section#contacts #email a {
+    text-decoration: none;
+    color: white;
+}
+
 section#h5 {
     color: #FFFFFF
 }
