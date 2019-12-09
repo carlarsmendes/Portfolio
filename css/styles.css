@@ -19,10 +19,10 @@ body #main-container {
 
 body,
 html {
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    max-height: 100%;
+    /* width: 100%;
+    max-width: 100%; */
+    /* height: 100%;
+    max-height: 100%; */
     font-family: 'Montserrat', sans-serif;
     padding: 0;
     margin: 0;
@@ -31,14 +31,10 @@ html {
 
 /* HEADER STYLES */
 header {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 header h1 {
-    top: 560px;
-    left: 657px;
-    width: 608px;
-    height: 88px;
     text-align: center;
     font: 700 72px/88px 'Montserrat';
     letter-spacing: 0;
@@ -47,10 +43,6 @@ header h1 {
 }
 
 h2 {
-    top: 660px;
-    left: 759px;
-    width: 404px;
-    height: 49px;
     text-align: center;
     font: Light 40px/49px 'Montserrat';
     letter-spacing: 0;
@@ -59,10 +51,7 @@ h2 {
 }
 
 h4 {
-    top: 733px;
-    left: 600px;
-    width: 722px;
-    height: 58px;
+
     text-align: center;
     font: 500 24px/29px 'Montserrat';
     letter-spacing: 0;
@@ -74,11 +63,11 @@ header img {
     width: 336px;
 }
 
-/* About Section */
+/* ----------About Section----------- */
 
 section#about {
-    top: 954px;
-    left: -147px;
+    /* top: 954px;
+    left: -147px; */
     min-height: 757px;
     background: #BAD5EB 0% 0% no-repeat padding-box;
     opacity: 1;
@@ -90,12 +79,12 @@ section#about p {
     letter-spacing: 0;
     color: #1B75BC;
     opacity: 1;
-    width: 800px;
+    max-width: 800px;
 }
 
 section#about button {
-    top: 1523px;
-    left: 800px;
+    /* top: 1523px;
+    left: 800px; */
     width: 320px;
     height: 80px;
     background: #1B75BC 0% 0% no-repeat padding-box;
@@ -107,10 +96,10 @@ section#about button {
 }
 
 section#about button a {
-    top: 1549px;
+    /* top: 1549px;
     left: 877px;
     width: 166px;
-    height: 29px;
+    height: 29px; */
     text-align: left;
     font: 500 24px/29px 'Montserrat';
     letter-spacing: 0;
@@ -144,6 +133,7 @@ h5 {
     padding: 0;
 }
 
+
 section#contacts {
     min-height: 400px;
     background: #1B75BC 0% 0% no-repeat padding-box;
@@ -152,13 +142,38 @@ section#contacts {
     color: white;
 }
 
+section#contacts .smedia-icon {
+    margin: 13px;
+}
+
+section#contacts #email {
+    border-top: 1px solid #BAD5EB;
+    border-bottom: 1px solid #BAD5EB;
+    padding: 31.5px 0;
+}
+
 section#h5 {
     color: #FFFFFF
 }
 
-footer{
+footer {
+    min-height: 160px;
+    background: #BAD5EB 0% 0% no-repeat padding-box;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border: 3px solid yellow;
+}
 
-min-height: 160px;
-background: #BAD5EB 0% 0% no-repeat padding-box;
+footer h5 {
+    color: #1B75BC;
+    margin-right: 5px;
+}
 
+footer .powered-by-icon {
+    margin: 13px;
+}
+
+body {
+    border: 3px solid orange;
 }
