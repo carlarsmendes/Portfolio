@@ -138,8 +138,8 @@ section#about button a {
 }
 
 section#portfolio img {
-    /* width: 350px;
-    min-height: 300px; */
+    max-height: 400px;
+    min-height: 300px;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -147,6 +147,14 @@ section#portfolio img {
 h5 {
     font: 400 16px/24px 'Montserrat';
     text-align: center;
+}
+
+section#portfolio h5 {
+    text-align: center;
+    font: 500 24px/29px 'Montserrat';
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
 }
 
 .project-container {
