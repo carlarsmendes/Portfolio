@@ -121,8 +121,20 @@ section#about button a {
 
 /* ---PORTFOLIO SECTION */
 
-section#portfolio {
-    margin: 0 100px;
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
+
+    section#portfolio {
+        margin: 100px;
+        padding: 0 10%;
+    }
+}
+
+@media only screen and (min-width: 1401px) {
+
+    section#portfolio {
+        margin: 100px;
+        padding: 0 25%;
+    }
 }
 
 section#portfolio img {
