@@ -97,6 +97,15 @@ section#about button {
     margin-top: 80px;
 }
 
+section#about button:hover {
+
+
+    background: rgb(17, 74, 117) 0% 0% no-repeat padding-box;
+
+    color: white;
+
+}
+
 section#about button a {
     /* top: 1549px;
     left: 877px;
