@@ -144,6 +144,10 @@ section#portfolio img {
     border-radius: 5px;
 }
 
+/* section#portfolio img:hover {
+    background-color: black;
+} */
+
 h5 {
     font: 400 16px/24px 'Montserrat';
     text-align: center;
