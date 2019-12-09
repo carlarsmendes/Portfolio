@@ -217,3 +217,9 @@ footer .powered-by-icon {
 .card {
     border: none;
 }
+
+/* PLAYING WITH DARK STYLES */
+
+#swapStylesheet {
+    display: none;
+}
