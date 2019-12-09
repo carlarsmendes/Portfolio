@@ -44,7 +44,7 @@ header h1 {
 
 h2 {
     text-align: center;
-    font: Light 40px/49px 'Montserrat';
+    font: 300 40px/49px 'Montserrat';
     letter-spacing: 0;
     color: #1B75BC;
     opacity: 1;
@@ -57,6 +57,8 @@ h4 {
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
+    max-width: 600px;
+    min-width: 300px;
 }
 
 header img {
