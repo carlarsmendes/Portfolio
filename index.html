@@ -1,19 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Portfolio Website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" id="pagestyle" href="./css/default.css" type="text/css" />
     <link rel="stylesheet" href="./css/animate.css" type="text/css" />
-    <title>Carla Mendes</title>
+    <meta name="theme-color" content="#1B75BC">
+    <title>Carla Mendes' Portolio</title>
 </head>
 
 <body class="">
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
     <header class="row m-4">
         <div class="col-sm d-flex flex-column align-items-center justify-content-center">
             <img src="img/startbootstrap-stylish-portfolio-gh-pages/CarlaMendes_BW@2x.png">
@@ -26,17 +36,15 @@
     </header>
     <section id="about" class="row">
         <div class="container col-sm d-flex flex-column align-items-center justify-content-center">
-            <p class="m-3">I am currently collaborating with the <a href="http://vinculodesign.com/"
-                    target="_blank">Vinculo Design
-                    Estratégico,</a> in Rio de
-                Janeiro 🇧🇷 until the end of March.
-                Previously I've been a Teaching Assistant in Ironhack's Web Dev Bootcamp and also the Data Analytics
-                Bootcamp.
+            <p class="m-3">I am currently working @  <a href="http://waeg.com/"
+                    target="_blank">Waeg</a> as a Frontend Developer.
+                Previously I was working with <a href="http://vinculodesign.com/"
+                target="_blank">Vinculo Design
+                Estratégico,</a> and before that I was a Teaching Assistant in <a href="http://ironhack.com" target="_blank">Ironhack</a>'s Bootcamps - Both Web Dev and Data Analytics.
             </p>
-            <p class="m-3">Previously a Finance graduate, (I know!...) I fell in love with Front-End Web Dev a couple of
-                years ago,
-                and went after it professionally in 2018.</p>
-            <p class="m-3">I have worked in Lisbon, Budapest, London and lately for remote clients, based in sunny
+            <p class="m-3">Originally a Finance graduate, I fell in love with Front-End Web Dev in 2017,
+                and pursued it professionally in 2018.</p>
+            <p class="m-3">I have worked in Lisbon, Budapest, London and lately for remote clients worldwide, based in sunny
                 Lisbon.</p>
             <p class="m-3">Always good for a karaoke. Passionate and honest in
                 life, work, and music.</p>
@@ -180,6 +188,19 @@
         </h5>
     </footer>
     <script src="./js/script.js"></script>
+
+    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
