@@ -116,9 +116,83 @@ html {
 }
 
 
+/* ----------NAV STYLES----------- */
+
+nav{
+    background-color: #1B75BC;
+    color:white;
+    text-transform: capitalize;
+    text-align: center;
+    display:flex;
+    margin-bottom: 30px;
+    position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+-moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+}
+
+nav ul{
+    text-decoration: none;
+    text-transform: capitalize;
+    display:flex;
+    margin:15px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li{
+    text-decoration: none;
+    text-transform: capitalize;
+    list-style: none;
+    padding:5px 10px;
+    text-align: center;
+    font: 500 24px/29px 'Montserrat';
+    letter-spacing: 0;
+}
+
+:root {
+    --mainColor: #BAD5EB;
+    --darkBlue: #1B75BC;
+  }
+
+nav ul li a {
+    text-transform: capitalize;
+    letter-spacing: 2px; 
+text-decoration: none; 
+color:white;
+/*animation*/
+background:
+     linear-gradient(
+       to bottom, var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 3px 3px;
+    transition: background-size .5s;
+}
+
+nav a:hover {
+    background-size: 4px 50px;
+    color: var(--darkBlue);
+  }
+
+
+
+
 /* HEADER STYLES */
 header {
+    padding-top:100px;
     min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 header h1 {
@@ -151,6 +225,7 @@ header img {
     width: 100%;
     max-width: 336px;
     min-width: 300px;
+    margin:0 auto;
 }
 
 /* ----------About Section----------- */
@@ -162,6 +237,11 @@ section#about {
     background: #BAD5EB 0% 0% no-repeat padding-box;
     opacity: 1;
     padding: 40px 0 40px 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 section#about p {
@@ -184,6 +264,9 @@ section#about button {
     border: 0;
     color: white;
     margin-top: 80px;
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+    -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
 }
 
 section#about button:hover {
@@ -215,6 +298,14 @@ section#about button a {
     section#portfolio {
         margin: 100px;
         padding: 0 10%;
+        
+    }
+    section#portfolio .card img {
+        text-align: center;
+    }
+
+    section#portfolio .card p{
+        text-align: left;
     }
 }
 
@@ -223,6 +314,7 @@ section#about button a {
     section#portfolio {
         margin: 100px;
         padding: 0 25%;
+        text-align: center;
     }
 }
 
@@ -231,6 +323,15 @@ section#portfolio img {
     min-height: 300px;
     object-fit: cover;
     border-radius: 5px;
+    text-align: center;
+}
+
+section#portfolio .card {
+    text-align: center;
+}
+
+section#portfolio .card p{
+    text-align: left;
 }
 
 /* section#portfolio img:hover {
@@ -261,19 +362,25 @@ section#portfolio h5 {
 section#contacts {
     min-height: 400px;
     background: #1B75BC 0% 0% no-repeat padding-box;
-    border: 1px solid #707070;
+
     opacity: 1;
     color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 section#contacts .smedia-icon {
-    margin: 13px;
+    margin: 0 13px;
 }
 
 section#contacts #email {
-    border-top: 1px solid #BAD5EB;
-    border-bottom: 1px solid #BAD5EB;
-    padding: 31.5px 0;
+    border-top: 3px solid #BAD5EB;
+    border-bottom: 3px solid #BAD5EB;
+    padding: 40px 0;    
+    
 }
 
 section#contacts #email a {
@@ -292,6 +399,11 @@ footer {
     margin: 0;
     width: 100%;
     /* border: 3px solid yellow; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 footer h5 {
