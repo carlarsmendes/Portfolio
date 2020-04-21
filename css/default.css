@@ -178,7 +178,7 @@ background:
 
 nav a:hover {
     background-size: 4px 50px;
-    color: var(--darkBlue);
+    /*color: var(--darkBlue);*/
   }
 
 
@@ -360,6 +360,42 @@ section#portfolio h5 {
     padding: 0;
 }
 
+/*------------Testimonials Section---------*/
+
+section#testimonials {
+  width:100%;
+  display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:3px solid orange;
+}
+
+section#testimonials .multiple-cards-container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 100px;
+}
+
+section#testimonials .card-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:30%;
+    min-width: 300px;
+    max-width: 800px;
+    background-color: #BAD5EB;
+    padding:40px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+-moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+}
+
+/*------------Contacts ection---------*/
 
 section#contacts {
     min-height: 400px;
@@ -421,7 +457,8 @@ footer .powered-by-icon {
     border: none;
 }
 
-/* PLAYING WITH DARK STYLES */
+/* -----PLAYING WITH DARK STYLES--------- */
+
 /* (For now it0s disabled)*/
 #swapStylesheet {
     display: none;
@@ -438,6 +475,7 @@ footer .powered-by-icon {
     section#about button {
         width: 260px;
         height: 60px;
+        
 
     }
 
