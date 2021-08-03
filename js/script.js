@@ -6,8 +6,8 @@ function initate() {
     var style1 = document.getElementById("stylesheet1");
     var style2 = document.getElementById("stylesheet2");
 
-    style1.onclick = function () {swapStyleSheet("./css/default.css");}
-    style2.onclick = function(){swapStyleSheet("./css/dark.css");}
+    style1.onclick = function () {swapStyleSheet("./css/default.css");};
+    style2.onclick = function() {swapStyleSheet("./css/dark.css");};
 }
 
 window.onload = initate;
@@ -19,11 +19,11 @@ function showWorkExperience() {
     var todayMonth = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
     let todayYear = today.getFullYear();
 
-    let dateStartWaeg = Apr 2020
+    //let dateStartWaeg = Apr 2020
 
 }
 
-/*function renderCountdown(dateStart, dateEnd) {
+function renderCountdown(dateStart, dateEnd) {
 
     console.log(dateStart, dateEnd);
     // Logs 
@@ -32,32 +32,35 @@ function showWorkExperience() {
 
     let currentDate = dateStart.getTime();
     let targetDate = dateEnd.getTime(); // set the countdown date
-    let days, hours, minutes, seconds; // variables for time units
-    let countdown = document.getElementById("tiles"); // get tag element
+    let years, months, days, hours, minutes, seconds; // variables for time units
+    let countdown = document.getElementById("workExpTimer"); // get tag element
     function getCountdown() {
         // find the amount of "seconds" between now and target
         let secondsLeft = (targetDate - currentDate) / 1000;
-        days = pad(parseInt(secondsLeft / 86400));
-        secondsLeft %= 86400;
-        hours = pad(parseInt(secondsLeft / 3600));
-        secondsLeft %= 3600;
-        minutes = pad(parseInt(secondsLeft / 60));
-        seconds = pad(parseInt(secondsLeft % 60));
+        days = parseFloat(secondsLeft / 86400);
+        console.log("days",days);
+        years = (((days / 365) * 10) / 10).toFixed(1);
+        months = (((days / 30) * 10) / 10).toFixed(0);
+        //months = Math.floor((pad(parseInt(secondsLeft / 86400)) / 30)-(years*365/30));
+        
         // format countdown string + set tag value
-        countdown.innerHTML = "<span>" + days + "</span><span>" + hours + "</span><span>" + minutes + "</span><span>" + seconds + "</span>";
+        function sinPlural () {if (years === 0) { return ""; } else if (years === 1) { return " year"; } else { return " years";}}
+        countdown.innerHTML = years + sinPlural() ;
+        
     }
 
-    console.log("<span>" + days + "</span><span>" + hours + "</span><span>" + minutes + "</span><span>" + seconds + "</span>");
+    
 
     function pad(n) {
         return (n < 10 ? '0' : '') + n;
     }
     getCountdown();
     setInterval(function () { getCountdown(); }, 1000);
-}*/
+}
 
-let entryDateWaeg = "Sat Apr 01 2020 11: 42: 04 GMT - 0600(CST)";
+let entryDateWaeg = new Date("01/01/2020");
 let today = new Date();
+console.log("Log here");
 
 
-//renderCountdown(entryDateWaeg, today);
+renderCountdown(entryDateWaeg, today);
