@@ -26,9 +26,7 @@ function showWorkExperience() {
 function renderCountdown(dateStart, dateEnd) {
 
     console.log(dateStart, dateEnd);
-    // Logs 
-    // Sat Dec 19 2015 11:42:04 GMT-0600 (CST) 
-    // Mon Jan 18 2016 11:42:04 GMT-0600 (CST)
+    
 
     let currentDate = dateStart.getTime();
     let targetDate = dateEnd.getTime(); // set the countdown date
@@ -60,7 +58,5 @@ function renderCountdown(dateStart, dateEnd) {
 
 let entryDateWaeg = new Date("01/01/2020");
 let today = new Date();
-console.log("Log here");
-
 
 renderCountdown(entryDateWaeg, today);
