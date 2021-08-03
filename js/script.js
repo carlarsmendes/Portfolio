@@ -23,7 +23,7 @@ function showWorkExperience() {
 
 }
 
-function renderCountdown(dateStart, dateEnd) {
+/*function renderCountdown(dateStart, dateEnd) {
 
     console.log(dateStart, dateEnd);
     // Logs 
@@ -54,10 +54,10 @@ function renderCountdown(dateStart, dateEnd) {
     }
     getCountdown();
     setInterval(function () { getCountdown(); }, 1000);
-}
+}*/
 
 let entryDateWaeg = "Sat Apr 01 2020 11: 42: 04 GMT - 0600(CST)";
 let today = new Date();
 
 
-renderCountdown(entryDateWaeg, today);
+//renderCountdown(entryDateWaeg, today);
