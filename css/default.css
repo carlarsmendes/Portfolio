@@ -113,6 +113,7 @@ html {
     font-family: 'Montserrat', sans-serif;
     padding: 0;
     margin: 0;
+     scroll-behavior: smooth;
 }
 
 
@@ -248,7 +249,7 @@ section#about {
     text-align: center;
 }
 
-section#about p {
+section#about p, section#about li {
     text-align: left;
     font: 500 22px/44px 'Montserrat';
     letter-spacing: 0;
