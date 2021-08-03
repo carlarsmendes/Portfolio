@@ -309,6 +309,10 @@ section#about button a {
     section#portfolio .card p{
         text-align: left;
     }
+
+    .rounded-circle {
+        border-radius:50%;
+    }
 }
 
 @media only screen and (min-width: 1401px) {
