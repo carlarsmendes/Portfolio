@@ -119,7 +119,7 @@ html {
 
 /* ----------NAV STYLES----------- */
 
-nav{
+nav {
     background-color: #1B75BC;
     color:white;
     text-transform: capitalize;
@@ -369,9 +369,9 @@ section#portfolio h5 {
 
 
 section#contacts {
-    min-height: 400px;
+    min-height: 600px;
+    height:fit-content;
     background: #1B75BC 0% 0% no-repeat padding-box;
-
     opacity: 1;
     color: white;
     display:flex;
@@ -381,8 +381,14 @@ section#contacts {
     text-align: center;
 }
 
+section#contacts .contacts-container {
+    font-size:20px;
+    line-height:180%;
+    max-width: 800px;
+}
+
 section#contacts .smedia-icon {
-    margin: 0 13px;
+    margin: 0 15px;
 }
 
 section#contacts #email {
@@ -392,7 +398,7 @@ section#contacts #email {
     
 }
 
-section#contacts #email a {
+section#contacts #social-networks a {
     text-decoration: none;
     color: white;
 }
@@ -550,22 +556,7 @@ footer .powered-by-icon {
     clear: both;
   }
   
-  /* ==========================================================================
-     EXAMPLE Media Queries for Responsive Design.
-     These examples override the primary ('mobile first') styles.
-     Modify as content requires.
-     ========================================================================== */
-  
-  @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-  }
-  
-  @media print,
-    (-webkit-min-device-pixel-ratio: 1.25),
-    (min-resolution: 1.25dppx),
-    (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-  }
+
   
   /* ==========================================================================
      Print styles.
