@@ -398,6 +398,11 @@ section#contacts #email {
     
 }
 
+section#contacts a {
+    color: #fff;
+}
+
+
 section#contacts #social-networks a {
     text-decoration: none;
     color: white;
