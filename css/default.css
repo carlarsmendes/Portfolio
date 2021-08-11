@@ -147,6 +147,9 @@ h5 {
     text-align: center;
 }
 
+.mobile-show {
+    display:none;
+}
 
 
 /* ----------NAV STYLES----------- */
@@ -164,6 +167,7 @@ nav {
     -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
     -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
     box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+    z-index: 14;
 }
 
 nav ul {
@@ -271,7 +275,7 @@ section#about p, section#about li {
     max-width: 800px;
 }
 
-section#about button {
+.button {
     /* top: 1523px;
     left: 800px; */
     
@@ -288,7 +292,7 @@ section#about button {
     box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
 }
 
-section#about button:hover {
+section#about button:hover, .button:hover {
 
     background: rgb(17, 74, 117) 0% 0% no-repeat padding-box;
 
@@ -297,7 +301,7 @@ section#about button:hover {
 
 }
 
-section#about button a {
+section#about button a, .button a {
    
     text-align: left;
     font: 500 20px/44px 'Montserrat';
@@ -309,6 +313,15 @@ section#about button a {
 
 /* ---PORTFOLIO SECTION ---*/
 
+section#portfolio  {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin:0 auto;
+}
+
 
 section#portfolio h2 {
 
@@ -319,7 +332,7 @@ section#portfolio h5 {
     text-align: center;
     font: 500 24px/29px 'Montserrat';
     letter-spacing: 0;
-    color: #000000;
+    
     opacity: 1;
 }
 
@@ -344,19 +357,81 @@ section#portfolio h5 {
 }
 
  .project-card {
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
     width: 35%;
     min-width: 300px;
     max-width: 400px;
     text-align: center;
     margin:0 20px 20px 20px;
-    /* border:3px solid yellow; */
-    box-shadow: 0px 5px 24px -7px #C2C6BA;
+    z-index: 0;
+    
 }
 
 .project-card p {
     text-align: left;
     margin: 0 20px;
 }
+
+/* This container is needed to position the front and back side */
+.flip-card {
+    background-color: transparent;
+    width: 350px;
+    height: 450px;
+    perspective: 1000px;
+    /* box-shadow: 0px 5px 24px -7px #C2C6BA; */
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #fff;
+    color: black;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flip-card-back {
+    background-color: var(--darkBlue);
+    color: white;
+    transform: rotateY(180deg);
+    display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .flip-card-back h5 {
+    color:white;
+    margin:0;
+    padding:0;
+    margin-bottom: 20px;
+  }
+
 
  .icon-container {
 
@@ -366,7 +441,7 @@ section#portfolio h5 {
     justify-content: center;
     align-items: center;
 
-
+    margin-bottom:5px;
  }
 
   .icon-container .lang-icon{
@@ -464,8 +539,35 @@ footer .powered-by-icon {
 
 /******** MEDIA QUERIES ******/
 
-
+/*Mobile view*/
 @media only screen and (max-width: 767px) {
+
+    .mobile-show {
+        display:inline;
+    }
+
+    .flip-card-inner {
+        position: absolute;
+        
+        text-align: center;
+        transition: none;
+        
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+
+
+    .flip-card:hover .flip-card-inner {
+        transform: none;
+      }
+
+    .flip-card {
+        background-color: transparent;
+        width: 350px;
+        height: 550px;
+        /* box-shadow: 0px 5px 24px -7px #C2C6BA; */
+    }    
+
+
 
     section#about p {
         font: 500 24px/40px 'Montserrat';

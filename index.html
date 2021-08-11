@@ -72,7 +72,9 @@
             </ul>
 
 
-            <button class="m-3"><a href="./downloads/CarlaMendes_CV_V03.pdf" download>Download CV</a></button>
+            <button class="button">
+                <a href="./downloads/CarlaMendes_CV_V03.pdf" download>Download CV</a>
+            </button>
             <div id="swapStylesheet">
                 <button id="stylesheet1" onclick="initate()"> Default Style Sheet </button>
                 <button id="stylesheet2" onclick="initate()"> Dark / Different Style Sheet </button>
@@ -88,34 +90,35 @@
         
 
         <div class="projects-container flex row">
-            <div class="col project-card">
-                <div class="card .h-100">
-                    <a href="https://carlarsmendes.github.io/IH-FirstProject-FE/">
-                        <img src="./img/portfoio_1_tetsuBiru.png" class="card-img-top portfolio-img" alt="...">
-                    </a>
-                    <div class="card-body">
-                        <h5>Testu Biru (IronBeers)</h5>
-                        <p class="card-text">Tetsu bīru ["Iron Beers"] Game was an adaptation of a famous 1981 Logic
-                            Puzzle game called "Sokoban" which I loved playing growing up. It was built using only HTML, CSS and JS DOM Manipulation.</p>
+            <div class="col project-card flip-card">
+                <div class="card flip-card-inner">
+                    <div class="flip-card-front">
+                        <a href="https://carlarsmendes.github.io/IH-FirstProject-FE/">
+                            <img src="./img/portfoio_1_tetsuBiru.png" class="card-img-top portfolio-img" alt="...">
+                        </a>
+                            
                         <div class="icon-container">
                             <img src="./img/lang-icons/html.svg" alt="html icon" class="lang-icon">
                             <img src="./img/lang-icons/css.svg" alt="css icon" class="lang-icon">
                             <img src="./img/lang-icons/javascript-programming-language.svg" alt="javascript language icon" class="lang-icon">
                         </div>
                     </div>
-
+                    <div class="flip-card-back">
+                        <h5>Testu Biru (IronBeers)</h5>
+                        <p class="card-text">Tetsu bīru ["Iron Beers"] Game was an adaptation of a famous 1981 Logic
+                            Puzzle game called "Sokoban" which I loved playing growing up. It was built using only HTML, CSS and JS DOM Manipulation.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col project-card">
-                <div class="card .h-100">
-                    <a href="https://save-my-date.herokuapp.com/">
-                        <img src="./img/portfoio_2_saveMyDate.png" class="card-img-top portfolio-img" alt="...">
-                    </a>
-                    <div class="card-body">
-                        <h5>Save My Date</h5>
-                        <p class="card-text">Save My Date was built in a three-person-group. It is a Web App to locate
-                            resturants nearby, or even suggest your next movie on Date Night. It is responsive and was built
-                            mobile-first. We used the Zomato API.</p>
+            
+            <div class="col project-card flip-card">
+                <div class="card flip-card-inner">
+                    <div class="flip-card-front">
+                        <a href="https://save-my-date.herokuapp.com/">
+                            <img src="./img/portfoio_2_saveMyDate.png" class="card-img-top portfolio-img" alt="...">
+                        </a>
+                
+                       
                         <div class="icon-container">
                             <img src="./img/lang-icons/javascript-programming-language.svg" alt="javascript language icon" class="lang-icon">
                             <img src="./img/lang-icons/bootstrap-4.svg" alt="Boostrap icon" class="lang-icon">
@@ -124,48 +127,62 @@
                             <img src="./img/lang-icons/expressjs.svg" alt="Express Js icon" class="lang-icon">
                             <img src="./img/lang-icons/rest-api.svg" alt="REST API icon" class="lang-icon">
                         </div>
-
                     </div>
+                    <div class="flip-card-back">
+                        <h5>Save My Date</h5>
+                        <p class="card-text">Save My Date was built in a three-person-group. It is a Web App to locate
+                        resturants nearby, or even suggest your next movie on Date Night. It is responsive and was built
+                        mobile-first. We used the Zomato API.</p>
+                    </div> 
                 </div>
             </div>
-            <div class="col project-card">
-                <div class="card .h-100">
-                    <a href="https://ih-smart-shelf.herokuapp.com/">
-                        <img src="./img/portfoio_3_smartShelf.png" class="card-img-top portfolio-img" alt="...">
-                    </a>
-                    <div class="card-body">
-                        <h5>Smart Shelf</h5>
-                        <p class="card-text">The Smart Shelf project was a 3-people group project which won us #1 in
-                            class. This applied React concepts learned in the bootcamp. Responsive and mobile-only, we used the Google Books API.</p>
+            <div class="col project-card flip-card">
+                <div class="card flip-card-inner">
+                    <div class="flip-card-front">
+                        <a href="https://ih-smart-shelf.herokuapp.com/">
+                            <img src="./img/portfoio_3_smartShelf.png" class="card-img-top portfolio-img" alt="...">
+                        </a>
                         <div class="icon-container">
                             <img src="./img/lang-icons/javascript-programming-language.svg" alt="javascript language icon" class="lang-icon">
                             <img src="./img/lang-icons/bootstrap-4.svg" alt="Boostrap icon" class="lang-icon">
                             <img src="./img/lang-icons/node-js.svg" alt="Node js icon" class="lang-icon">
                             <img src="./img/lang-icons/mongodb.svg" alt="MongoDB icon" class="lang-icon">
-                            <img src="./img/lang-icons/expressjs.svg" alt="Express Js icon" class="lang-icon">
+                            
                             <img src="./img/lang-icons/rest-api.svg" alt="REST API icon" class="lang-icon">
                             <img src="./img/lang-icons/react-js.svg" alt="React Js icon" class="lang-icon">
                         </div>
                     </div>
+                    <div class="flip-card-back">
+                        <h5>Smart Shelf</h5>
+                        <p class="card-text">The Smart Shelf project was a 3-people group project which won us #1 in
+                            class. This applied React concepts learned in the bootcamp. Responsive and mobile-only, we used the Google Books API.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col project-card">
-                <div class="card .h-100">
-                    <a href="https://janaconta.com.br/">
-                        <img src="./img/portfoio_4_jaNaConta.png" class="card-img-top portfolio-img" alt="...">
-                    </a>
-                    <div class="card-body">
+            <div class="col project-card flip-card">
+                <div class="card flip-card-inner">
+                    <div class="flip-card-front">
+                        <a href="https://janaconta.com.br/">
+                            <img src="./img/portfoio_4_jaNaConta.png" class="card-img-top portfolio-img" alt="...">
+                        </a>
+
+                        <button class="button mobile-show">See more details</button>
+                        
+                            
+                        <div class="icon-container">
+                            <img src="./img/lang-icons/html.svg" alt="html icon" class="lang-icon">
+                            <img src="./img/lang-icons/css.svg" alt="css icon" class="lang-icon">
+                            <img src="./img/lang-icons/javascript-programming-language.svg" alt="javascript language icon" class="lang-icon">
+                            <img src="./img/lang-icons/bootstrap-4.svg" alt="Boostrap icon" class="lang-icon">
+                        </div>
+                        
+                    </div>
+                    <div class="flip-card-back">
                         <h5>Já Na Conta</h5>
                         <p class="card-text">This was a Freelance Project for Vinculo Design Estratégico in Brazil, with
                             their clean, custom
                             design. This is a responsive, mobile-first, static one-page
                             website. Communication with company and work made remotely.</p>
-                        <div class="icon-container">
-                            <img src="./img/lang-icons/html.svg" alt="html icon" class="lang-icon">
-                            <img src="./img/lang-icons/css.svg" alt="css icon" class="lang-icon">
-                            <img src="./img/lang-icons/javascript-programming-language.svg" alt="javascript language icon" class="lang-icon">
-                            <img src="./img/lang-icons/bootstrap-4.svg" alt="Boostrap icon" class="lang-icon">
-                        </div>
                     </div>
                 </div>
             </div>
@@ -221,7 +238,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-
 
 
 
