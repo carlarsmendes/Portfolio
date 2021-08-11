@@ -124,6 +124,30 @@ html {
     scroll-behavior: smooth;
 }
 
+h2 {
+    text-align: center;
+    font: 300 40px/49px 'Montserrat';
+    letter-spacing: 0;
+    color: var(--darkBlue);
+    opacity: 1;
+}
+
+h4 {
+    text-align: center;
+    font: 500 24px/29px 'Montserrat';
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+h5 {
+    font: 400 16px/24px 'Montserrat';
+    text-align: center;
+}
+
+
 
 /* ----------NAV STYLES----------- */
 
@@ -209,23 +233,7 @@ header h1 {
     opacity: 1;
 }
 
-h2 {
-    text-align: center;
-    font: 300 40px/49px 'Montserrat';
-    letter-spacing: 0;
-    color: var(--darkBlue);
-    opacity: 1;
-}
 
-h4 {
-    text-align: center;
-    font: 500 24px/29px 'Montserrat';
-    letter-spacing: 0;
-    color: #000000;
-    opacity: 1;
-    max-width: 600px;
-    min-width: 300px;
-}
 
 header img {
     width: 100%;
@@ -282,7 +290,6 @@ section#about button {
 
 section#about button:hover {
 
-
     background: rgb(17, 74, 117) 0% 0% no-repeat padding-box;
 
     color: white;
@@ -300,75 +307,12 @@ section#about button a {
     text-decoration: none;
 }
 
-/* ---PORTFOLIO SECTION */
-
-@media only screen and (min-width: 768px) and (max-width: 1400px) {
-
-    section#portfolio {
-        margin: 100px;
-        padding: 0 10%;
-        
-    }
-    section#portfolio .card img {
-        text-align: center;
-    }
-
-    section#portfolio .card p{
-        text-align: left;
-    }
-
-    
-}
-
-@media only screen and (min-width: 1401px) {
-
-    section#portfolio {
-        margin: 100px;
-        padding: 0 25%;
-        text-align: center;
-    }
-}
-
-section#portfolio img.portfolio-img {
-    max-height: 400px;
-    min-height: 300px;
-    object-fit: cover;
-    border-radius: 5px;
-    text-align: center;
-}
-
-section#portfolio .card {
-    text-align: center;
-}
-
-section#portfolio .card p{
-    text-align: left;
-}
-
- section#portfolio .icon-container {
-
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
- }
-
- section#portfolio .icon-container img.lang-icon{
-   width:50px;
-   height:50px;
-   margin: 20px 8px 50px;
- }
+/* ---PORTFOLIO SECTION ---*/
 
 
+section#portfolio h2 {
 
-/* section#portfolio img:hover {
-    background-color: black;
-} */
-
-h5 {
-    font: 400 16px/24px 'Montserrat';
-    text-align: center;
+    margin-bottom:50px;
 }
 
 section#portfolio h5 {
@@ -379,10 +323,65 @@ section#portfolio h5 {
     opacity: 1;
 }
 
-.project-container {
-    width: 15%;
-    padding: 0;
+.portfolio-img {
+    width:100%;
+    max-height: 400px;
+    min-height: 300px;
+    object-fit: cover;
+    
+    text-align: center;
 }
+
+.projects-container {
+    width: 100%;
+    padding: 0 0 50px 0;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    
+}
+
+ .project-card {
+    width: 35%;
+    min-width: 300px;
+    max-width: 400px;
+    text-align: center;
+    margin:0 20px 20px 20px;
+    /* border:3px solid yellow; */
+    box-shadow: 0px 5px 24px -7px #C2C6BA;
+}
+
+.project-card p {
+    text-align: left;
+    margin: 0 20px;
+}
+
+ .icon-container {
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+ }
+
+  .icon-container .lang-icon{
+   width:40px;
+   height:40px;
+   margin: 10px 8px 10px;
+ }
+
+
+
+
+
+
+
+/*Contacts section*/
 
 
 section#contacts {
@@ -463,6 +462,9 @@ footer .powered-by-icon {
     /* display: inline; */
 }
 
+/******** MEDIA QUERIES ******/
+
+
 @media only screen and (max-width: 767px) {
 
     section#about p {
@@ -479,17 +481,53 @@ footer .powered-by-icon {
     section#portfolio {
         margin: 10px 0;
         padding: 0 10%;
-        /* border: 3px solid yellow; */
     }
 
-    section#portfolio h2 {
-        /* border: 3px solid pink; */
+    .project-card {
+        width: 80%;
+        min-width:400px;
+        max-width: 600px;
+        text-align: center;
+        margin:30px 10px 30px 10px;
+        /* border:3px solid yellow; */
+        box-shadow: 0px 5px 24px -7px #C2C6BA;
     }
 
+   
     footer .powered-by-icon {
         width: 70px;
-        /* border: 3px solid yellow; */
+       
     }
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
+
+    section#portfolio {
+        margin: 100px 10px;
+        /* padding: 0 10%; */
+        
+    }
+    section#portfolio .card img {
+        text-align: center;
+    }
+
+    section#portfolio .card p{
+        text-align: left;
+    }
+
+    
+}
+
+@media only screen and (min-width: 1401px) {
+/* 
+    section#portfolio {
+        margin: 100px;
+        padding: 0 25%;
+        text-align: center;
+    } */
 
 }
 
